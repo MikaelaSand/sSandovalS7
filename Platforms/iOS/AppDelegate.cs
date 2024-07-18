@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace sSandovalS7
+namespace sSandovalS6
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

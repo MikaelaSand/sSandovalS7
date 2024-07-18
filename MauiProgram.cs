@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace sSandovalS7
+namespace sSandovalS6
 {
     public static class MauiProgram
     {

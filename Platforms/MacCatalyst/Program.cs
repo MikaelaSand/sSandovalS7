@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace sSandovalS7
+namespace sSandovalS6
 {
     public class Program
     {

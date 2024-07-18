@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace sSandovalS7
+namespace sSandovalS6
 {
     [Application]
     public class MainApplication : MauiApplication

@@ -1,4 +1,4 @@
-﻿namespace sSandovalS7
+﻿namespace sSandovalS6
 {
     public partial class App : Application
     {
@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Vews.Estudiante());
         }
     }
 }

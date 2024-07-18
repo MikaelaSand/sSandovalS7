@@ -1,4 +1,4 @@
-﻿namespace sSandovalS7
+﻿namespace sSandovalS6
 {
     public partial class AppShell : Shell
     {

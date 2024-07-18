@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sSandovalS6.Vews.v_add"
+             Title="v_add">
+    <VerticalStackLayout>
+        <Label 
+            Text="Agregar Estudiante"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="20"/>
+
+        <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre"/>
+        <Entry x:Name="txtApellido" Placeholder="Ingrese Apellido"/>
+        <Entry x:Name="txtEdad" Placeholder="Ingrese Edad"/>
+        <Button x:Name="btnagregar"
+                Text="Agregar Estudiante"
+                Clicked="btnagregar_Clicked_1"/>
+
+    </VerticalStackLayout>
+</ContentPage>

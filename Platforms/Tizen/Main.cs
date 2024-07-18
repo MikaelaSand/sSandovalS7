@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace sSandovalS7
+namespace sSandovalS6
 {
     internal class Program : MauiApplication
     {

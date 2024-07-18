@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sSandovalS6.Vews.Estudiante"
+             Title="Estudiante">
+    <VerticalStackLayout
+     Spacing="20"
+     Padding="20">
+        <Label 
+         Text="Semana 6 consumo WS"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Código" Grid.Column="0" HorizontalOptions="Start" TextColor="Violet"/>
+            <Label Text="Nombre" Grid.Column="1" HorizontalOptions="Start" TextColor="Violet"/>
+            <Label Text="Apellido" Grid.Column="2" HorizontalOptions="Start" TextColor="Violet"/>
+            <Label Text="Edad" Grid.Column="3"  HorizontalOptions="Start" TextColor="Violet"/>
+        </Grid>
+        <ListView x:Name="listaEstudiantes" ItemSelected="listaEstudiantes_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label x:Name="lblCodigo" Text="{Binding codigo}" Grid.Column="0" HorizontalOptions="Start" />
+                            <Label x:Name="lblNombre" Text="{Binding nombre}" Grid.Column="1" HorizontalOptions="Start" />
+                            <Label x:Name="lblApellido" Text="{Binding apellido}" Grid.Column="2" HorizontalOptions="Start" />
+                            <Label x:Name="lblEdad" Text="{Binding edad}" Grid.Column="3" HorizontalOptions="Start" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button x:Name="btnAgregar"
+             Text="Agregar estudiante"
+             Clicked="btnAgregar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
